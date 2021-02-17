@@ -7,11 +7,11 @@ const MovieReviews = ({reviews}) => {
            
             {reviews.map(review => {
                
-                <div>
+               return(<div className='review'>
                     <h1>{review.display_title}</h1>
-                    <h1>{review.summary_short}</h1>
+                    <p>{review.summary_short}</p>
                 </div>
-               
+               )
             })}
         </div>
     )
